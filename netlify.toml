@@ -1,0 +1,8 @@
+# Static site (index.html at the repo root) plus Netlify Functions.
+# There is no framework and no npm dependencies, so no build command is needed.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
